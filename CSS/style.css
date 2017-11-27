@@ -1,0 +1,130 @@
+body{
+	background: #F0FFFF url(images/software_dev.jpg) repeat-x;
+}
+
+#wrap {
+		width: 700px;
+		margin: 0px auto 15px auto;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		color : #F5F5DC
+		}
+
+/* Header */
+
+#header {
+		height: 242px;
+		margin: 0px auto 15px auto;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		color : #A52A2A
+		}
+		
+		
+
+		/* KOPIOITUJA */
+		
+#topmenu li {
+  display:inline;
+}
+
+#topmenu a {
+  display:block;
+  float:left;
+  height:28px;
+  margin:0px 0px 0px 0px;
+  text-decoration:none;
+  padding:9px 15px 0px 15px;
+  text-align:center;
+}
+
+#topmenu a, #topmenu a:visited, #topmenu a:active {
+  color:#000000;
+}
+
+#topmenu a:hover{
+  color:#000000;
+  background-color: #FF69B4;
+}
+
+#topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
+  color:#000000;
+  background-color:#FF69B4;
+}
+
+/*Content*/
+#content {
+	background-color: #FFC0CB;
+}
+#mainpage {
+	width:700px;
+	float:left;
+	padding:5px 5px 5px 0px;
+	height:auto
+}
+#mainpage p {
+	line-height:22px;
+	margin:10px 0px 22px 0px;
+	text-align: justify;
+}
+#mainpage blockquote {
+	background:#efefef;
+	display:block; 
+	margin:5px;
+	font:Georgia; 
+	font-style:italic;}
+h1, h2, h3, h4, h5 {
+	color:#000000;
+	font-weight:bold;
+	font-family: Georgia;
+}
+#mainpage h1 {
+	font-size:24px;
+}
+#mainpage h2 {
+	font-size:18px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #B52E10;
+}
+#mainpage h3 {
+	font-size:20px;}
+#mainpage h4 {
+	font-size:18px;}
+#mainpage h5 {
+	font-size:16px;}
+
+/*footer*/
+#footer {
+	margin:0 auto;
+	width:685px;
+	height:20px;
+	padding:10px;
+	color:#000000;
+	text-align: center;
+	background:#FFFFFF;
+	font-family: Georgia;
+	font-size: 11px;
+	clear: both;
+}
+
+#topbar{
+	height:78px;
+}
+
+table {
+border-spacing: 5px;
+}
+
+table, th, td {
+border:1px double red;
+padding: 15px;	
+}
+th {
+text-align: left;
+}
+
+table#t1 {
+width: 75%;
+background-color: #FFFFFF;
+border: 1px;
+}
