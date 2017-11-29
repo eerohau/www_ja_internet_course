@@ -1,15 +1,17 @@
 body{
-	background: #F0FFFF url(images/software_dev.jpg) repeat-x;
+	background: #141d4b;
+	/*background-image: url("../images/software_dev.jpg");*/
+	background-repeat: repeat-x;
 }
 
-#wrap {
-		width: 700px;
+/* #wrap {
+		width: 80%;
 		margin: 0px auto 15px auto;
 		font-family: Verdana, Arial, Helvetica, sans-serif;
 		font-size: 12px;
 		color : #F5F5DC
 		}
-
+ */
 /* Header */
 
 #header {
@@ -19,12 +21,21 @@ body{
 		color : #A52A2A
 		}
 		
-		
 
-		/* KOPIOITUJA */
+#topmenu {
+  display:block;
+  list-style:none;
+  padding:0 auto;
+  float: right;
+  width: 100%;
+  background-color:#232d9b;
+  position:fixed;
+}
+
 		
 #topmenu li {
   display:inline;
+  
 }
 
 #topmenu a {
@@ -38,33 +49,36 @@ body{
 }
 
 #topmenu a, #topmenu a:visited, #topmenu a:active {
-  color:#000000;
+  color:#BBBBBB;
 }
 
 #topmenu a:hover{
-  color:#000000;
-  background-color: #FF69B4;
+  color:#FFFFFF;
+  background-color: #000000;
 }
 
 #topmenu .active a, #topmenu .active a:visited, #topmenu .active a:active{
-  color:#000000;
-  background-color:#FF69B4;
+  color:#BBBBBB;
+  background-color:#333dbb;
 }
 
-/*Content*/
 #content {
 	background-color: #FFC0CB;
 }
 #mainpage {
-	width:700px;
-	float:left;
-	padding:5px 5px 5px 0px;
+	width:90%;
+	padding:0 5% 0;
 	height:auto
+	
 }
 #mainpage p {
 	line-height:22px;
 	margin:10px 0px 22px 0px;
 	text-align: justify;
+	color: #FFFFFF;
+}
+#mainpage a:visited{
+	color:#FFFFFF;
 }
 #mainpage blockquote {
 	background:#efefef;
@@ -78,20 +92,25 @@ h1, h2, h3, h4, h5 {
 	font-family: Georgia;
 }
 #mainpage h1 {
-	font-size:24px;
+	font-size:30px;
+	color: #FFFFFF;
 }
 #mainpage h2 {
-	font-size:18px;
+	font-size:20px;
 	padding-top: 20px;
 	padding-bottom: 5px;
-	border-bottom: 1px solid #B52E10;
+	border-bottom: 1px solid #FFFFFF;
+	color: #FFFFFF;
 }
 #mainpage h3 {
-	font-size:20px;}
+	font-size:20px;
+color: #FFFFFF;}
 #mainpage h4 {
-	font-size:18px;}
+	font-size:18px;
+	color: #FFFFFF;}
 #mainpage h5 {
-	font-size:16px;}
+	font-size:16px;
+	color: #FFFFFF;}
 
 /*footer*/
 #footer {
@@ -99,32 +118,28 @@ h1, h2, h3, h4, h5 {
 	width:685px;
 	height:20px;
 	padding:10px;
-	color:#000000;
+	color:#FFFFFF;
 	text-align: center;
-	background:#FFFFFF;
 	font-family: Georgia;
 	font-size: 11px;
 	clear: both;
 }
 
 #topbar{
-	height:78px;
+	height:50px;
 }
 
 table {
-border-spacing: 5px;
+    font-family: arial, sans-serif;
+	color: #000000;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-table, th, td {
-border:1px double red;
-padding: 15px;	
-}
-th {
-text-align: left;
+td, th {
+    border: 1px solid #dddddd;
+	background-color: #fff000;
+    text-align: left;
+    padding: 8px;
 }
 
-table#t1 {
-width: 75%;
-background-color: #FFFFFF;
-border: 1px;
-}
