@@ -105,9 +105,11 @@ h1, h2, h3, h4, h5 {
 #mainpage h3 {
 	font-size:20px;
 color: #FFFFFF;}
+
 #mainpage h4 {
 	font-size:18px;
 	color: #FFFFFF;}
+	
 #mainpage h5 {
 	font-size:16px;
 	color: #FFFFFF;}
@@ -134,12 +136,20 @@ table {
 	color: #000000;
     border-collapse: collapse;
     width: 100%;
+	font-weight: bold;
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    border: 2px solid #111111;
 	background-color: #fff000;
     text-align: left;
     padding: 8px;
 }
 
+form {
+	color: #FFFFFF;
+}
+
+form input {
+	padding-bottom: 2px;
+}

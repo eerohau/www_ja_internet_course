@@ -3,55 +3,108 @@
 
 	<html>
 	<head>
-    <title>WWW ja Internet - eerohau</title>
-    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+		<title>WWW ja Internet - eerohau</title>
+		<link href="CSS/style.css" rel="stylesheet" type="text/css">
+		
+		<script>
+			function validateForm()
+			{
+			if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+			{
+			alert("Name must be filled out");
+			return false;
+			}
+			if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value=="")
+			{
+			alert("Phone must be filled out");
+			return false;
+			}
+			if (document.forms["myForm"]["email"].value==null || document.forms["myForm"]["email"].value=="")
+			{
+			alert("Email must be filled out");
+			return false;
+			}
+			return true;
+			}
+		</script>	
+	
 	</head>
 	
 		<body>
-		<div id="topbar">
-		<div id="topmenu">
-			<li  class="active"><a href="index.html">Main</a>
-			</li>
-			<li><a href="projects.html">Projects</a>
-			</li>
-			<li><a href="videos.html">Videos</a>
-			</li>
-			</ul>
-		</div>
-		</div>
-		<div id="mainpage">
-			
-			<h1>Hello!</h1>
-			<p>My name is Eero Haukilahti and this is my WWW ja internet assignment page. <br>
-			I am currently studying in Kajaani university of applied sciences to become a video game developer.<br>
-			Previously I studied at Seinäjoki university of applied sciences, but dropped out from there and came to Kajaani.
-			</p>
+			<div id="topbar">
+				<div id="topmenu">
+					<li  class="active"><a href="index.html">Main</a>
+					</li>
+					<li><a href="projects.html">Projects</a>
+					</li>
+					<li><a href="videos.html">Videos</a>
+					</li>
+					</ul>
+				</div>
+			</div>
+			<div id="mainpage">
+				
+				<h1>Hello!</h1>
+				<p>My name is Eero Haukilahti and this is my WWW ja internet assignment page. <br>
+				I am currently studying in Kajaani university of applied sciences to become a video game developer.<br>
+				Previously I studied at Seinäjoki university of applied sciences, but dropped out from there and came to Kajaani.
+				</p>
 
-		<div>
-		<a href="http://kamk.fi/fi"> KAMK PAGE </a>
-		</div>
-		<br>
-		<a href="images/software_dev.jpg">
-		<img src="images/software_dev.jpg" alt="gamedev kuva" width="10%" height="10%">
-		<br>
-		</a>
-		<p>Click the image to see in full size</p>
+				<div>
+					<a href="http://kamk.fi/fi"> KAMK PAGE </a>
+				</div>
+				
+				<br>
+				<a href="images/software_dev.jpg">
+					<img src="images/software_dev.jpg" alt="gamedev kuva" width="10%" height="10%"> <br>
+				</a>
+				<p>Click the image to see in full size</p>
 
-			<h4>Some of my favourite video game series</h4>
-			<ul>
-			<li><a href="https://fi.wikipedia.org/wiki/Tales_of">Tales of -</a></li>
-			<li><a href="https://fi.wikipedia.org/wiki/Metroid_(pelisarja)">Metroid</a></li>
-			<li><a href="https://fi.wikipedia.org/wiki/Souls_(pelisarja)">Souls</a></li>
-			<li><a href="https://fi.wikipedia.org/wiki/Borderlands_(pelisarja)">Borderlands</a></li>
-			<li><a href="https://fi.wikipedia.org/wiki/Gears_of_War_(pelisarja)">Gears of War</a></li>
-			<li><a href="https://fi.wikipedia.org/wiki/999:_Nine_Hours,_Nine_Persons,_Nine_Doors">Zero Escape</a></li>
-			</ul>
-			
+				<h2>Some of my favourite video game series</h2>
+				<ul>
+					<li><a href="https://fi.wikipedia.org/wiki/Tales_of">Tales of -</a></li>
+					<li><a href="https://fi.wikipedia.org/wiki/Metroid_(pelisarja)">Metroid</a></li>
+					<li><a href="https://fi.wikipedia.org/wiki/Souls_(pelisarja)">Souls</a></li>
+					<li><a href="https://fi.wikipedia.org/wiki/Borderlands_(pelisarja)">Borderlands</a></li>
+					<li><a href="https://fi.wikipedia.org/wiki/Gears_of_War_(pelisarja)">Gears of War</a></li>
+					<li><a href="https://fi.wikipedia.org/wiki/999:_Nine_Hours,_Nine_Persons,_Nine_Doors">Zero Escape</a></li>
+				</ul>
+				
+				
+				<h2 id="contactus"> Contact me </h2>
+				<form>
+					First Name: <input type="text" name="fname" > <br>
+					Last Name: <input type="text" name="lname"><br><br>
+					Gender: <br>
+					<input type="radio" name="gender" value="male" checked> Male <br>
+					<input type="radio" name="gender" value="female" > Female <br>
+					<input type="radio" name="gender" value="Boeing AH-64 Apache" > Boeing AH-64 Apache <br>
+					<input type="radio" name="gender" value="other" > Other <br><br>
+					E-mail:<input type="email" name="email"> <br><br>
+					
+					Best video game of all time: <select name=“sport”>
+					<option>Super Metroid</option>
+					<option>Super Metroid</option>
+					<option>Super Metroid</option>
+					<option>Super Metroid</option>
+					<p></p><br>
+					<input type="submit" value="Submit">
+				</form>
+				
+				<h2>Form Validation Example</h2>
 		
+				<form name="myForm" onsubmit="return validateForm()" >
+					Name: <input type="text" name="name" /><br/>
+					Phone: <input type="text" name="phone" /><br/>
+					E-mail: <input type="text" name="email" /><br/>
+					<input type="submit" value="Click to Submit" />
+				</form>
 			
-		</div>
+				
+			</div>
+			
 			<div id="footer">
-			 <p>Copyright &copy;
+				<p>Copyright &copy;
 				<script type="text/javascript">var ct=new Date(); document.write(ct.getFullYear());</script>
 			</div>
 		</body>
