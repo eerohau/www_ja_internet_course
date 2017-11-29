@@ -9,9 +9,14 @@
 		<script>
 			function validateForm()
 			{
-			if (document.forms["myForm"]["name"].value==null || document.forms["myForm"]["name"].value=="")
+			if (document.forms["myForm"]["fName"].value==null || document.forms["myForm"]["fName"].value=="")
 			{
-			alert("Name must be filled out");
+			alert("First name must be filled out");
+			return false;
+			}
+			if (document.forms["myForm"]["lName"].value==null || document.forms["myForm"]["lName"].value=="")
+			{
+			alert("Last name must be filled out");
 			return false;
 			}
 			if (document.forms["myForm"]["phone"].value==null || document.forms["myForm"]["phone"].value=="")
@@ -94,7 +99,8 @@
 				<h2>Form Validation Example</h2>
 		
 				<form name="myForm" onsubmit="return validateForm()" >
-					Name: <input type="text" name="name" /><br/>
+					First Name: <input type="text" name="fName" /><br/>
+					Last Name: <input type="text" name="lName" /><br/>
 					Phone: <input type="text" name="phone" /><br/>
 					E-mail: <input type="text" name="email" /><br/>
 					<input type="submit" value="Click to Submit" />
