@@ -1,18 +1,7 @@
 body{
 	background: #141d4b;
-	/*background-image: url("../images/software_dev.jpg");*/
 	background-repeat: repeat-x;
 }
-
-/* #wrap {
-		width: 80%;
-		margin: 0px auto 15px auto;
-		font-family: Verdana, Arial, Helvetica, sans-serif;
-		font-size: 12px;
-		color : #F5F5DC
-		}
- */
-/* Header */
 
 #header {
 		height: 242px;
@@ -77,8 +66,13 @@ body{
 	text-align: justify;
 	color: #FFFFFF;
 }
-#mainpage a:visited{
+
+#mainpage a {
 	color:#FFFFFF;
+}
+
+#mainpage a:visited{
+	color:#AAAAAA;
 }
 #mainpage blockquote {
 	background:#efefef;
@@ -113,6 +107,9 @@ color: #FFFFFF;}
 #mainpage h5 {
 	font-size:16px;
 	color: #FFFFFF;}
+#mainpage li {
+	color: #FFFFFF;
+}
 
 /*footer*/
 #footer {
